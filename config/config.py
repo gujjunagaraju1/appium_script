@@ -12,3 +12,5 @@ class Config:
     appActivity=os.getenv("appActivity")
     automationName=os.getenv("automationName")
     platformName=os.getenv("platformName")
+    mobileNumber=os.getenv("mobileNumber")
+    otp=os.getenv("otp")
