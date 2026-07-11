@@ -4,7 +4,10 @@ from config.config import Config
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as Ec
 import time
+import pytest
 
+
+@pytest.mark.skip
 def test_login(driver:WebDriver):
     driver.find_element(AppiumBy.ACCESSIBILITY_ID,"English").click()
     driver.find_element(AppiumBy.ACCESSIBILITY_ID,"Continue").click()

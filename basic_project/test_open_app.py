@@ -11,7 +11,7 @@ options.app_activity=Config.appActivity
 options.auto_grant_permissions=True
 driver=webdriver.Remote("http://127.0.0.1:4723",options=options)
 print("succeefully")
-driver.terminate_app("com.advanta.croppulse.stage")
+driver.terminate_app(Config.appPackage)
 print("terminated")
 
 
